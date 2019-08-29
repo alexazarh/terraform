@@ -28,7 +28,7 @@ resource "aws_db_instance" "default" {
   storage_type         = "gp2"
   engine               = "mysql"
   engine_version       = "5.7"
-  instance_class       = "db.t2.micro"
+  instance_class       = "db.t2.medium"
   identifier           = "rds-${var.sandbox_id}"
   name                 = "${var.db_name}"
   username             = "${var.username}"
