@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "default" {
   name     = "mysql-${var.sandbox_id}-rg"
-  #location = "West US"
+  location = "westeurope"
 }
 
 resource "azurerm_mysql_server" "default" {
