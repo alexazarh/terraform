@@ -1,5 +1,6 @@
 provider "aws" {
   region = "eu-west-1"
+  version = "~> 2.0"
 }
 
 data "aws_vpc" "default" {
