@@ -10,7 +10,7 @@ data "aws_vpc" "default" {
 data "aws_subnet_ids" "apps_subnets" {
   vpc_id = "${var.vpc_id}"
   tags = {
-    Name = "app-subnet*"
+    cloudshell-rds = "app-subnet*"
   }
 }
 
