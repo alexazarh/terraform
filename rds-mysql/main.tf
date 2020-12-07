@@ -39,4 +39,5 @@ resource "aws_db_instance" "default" {
   vpc_security_group_ids    = ["${aws_security_group.rds.id}"]
   skip_final_snapshot       = true
   final_snapshot_identifier = "Ignore"
+  storage_encrypted         = true
 }
